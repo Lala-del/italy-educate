@@ -705,6 +705,43 @@ img {
   top: 35px;
   left: 35px;
 }
+.nav-link.active .service-tab::before{
+    content: "";
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    border: 1px solid #5BB9BF;
+    border-radius: 50%;
+    top: 16px;
+    left: 35px;
+}
+
+.nav-link .service-tab::before{
+  content: "";
+  position: absolute;
+  height: 21px;
+  width: 21px;
+  border: 1px solid white;
+  border-radius: 50%;
+  top: 16px;
+  left: 35px;
+}
+
+.service-tab .service-title {
+  padding-left: 40px;
+}
+
+.service-tab .service-title p{
+  font-size: 16px;
+  color: white;
+}
+
+.tab-text-s{
+  font-size: 14px;
+  color: white;
+}
+
+
 
 .service:hover {
   background: white;
@@ -1426,6 +1463,13 @@ color: #9A9A9A;
   border-radius: 50%;
   padding: 15px 11px;
 }
+
+.services .nav-link.active{
+  background: #5BB9BF;
+  color: white;
+}
+
+
 .nav-tabs .nav-link{
   font-style: normal;
   font-weight: 500;
@@ -1478,4 +1522,25 @@ color: #9A9A9A;
   right: 0;
   z-index: 0;
   opacity: 0.3;
+}
+
+.services{
+  background:#5BB9BF;
+}
+
+
+
+.services .nav-link.active{
+  background: white;
+  border: 1px solid white!important;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s;
+  
+}
+
+
+.services .nav-link.active p{
+  color: #5BB9BF;
 }
